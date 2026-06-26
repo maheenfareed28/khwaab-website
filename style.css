@@ -506,15 +506,35 @@ section {
 
 
 
+body.naya-page {
+    background: #f5f5f5;
+}
+body.gul-page {
+    background: #fff8f9;
+}
+body.riwayat-page {
+    background: #faf7f2;
+}
 .collection-header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px 60px;
+}
+
+.collection-header h1 {
+    font-size: 70px;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+.collection-header p {
+    font-size: 22px;
+    color: #be6183;
 }
 
 .collection-gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 50px 20px;
 }
@@ -580,10 +600,14 @@ section {
 
 .collection-stats div {
     background: white;
-    padding: 25px;
-    border-radius: 15px;
-    width: 180px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    width: 200px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.collection-stats div:hover {
+    transform: translateY(-5px);
 }
 
 .collection-tag {
