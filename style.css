@@ -54,7 +54,8 @@ button:hover {
 
 p {
     margin-bottom: 30px;
-    max-width: 700px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto 30px;
     line-height: 1.6;
 }
@@ -134,6 +135,12 @@ nav a:hover {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .social-icon {
@@ -350,6 +357,7 @@ footer {
 
 .featured-tag {
     background: #f1ede6;
+
     color: #8a6f4d;
 }
 
@@ -655,4 +663,89 @@ body.riwayat-page {
     font-size: 24px;
     font-style: italic;
     color: #a88a5e;
+}
+
+@media screen and (max-width: 768px) {
+
+    .announcement {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: -250px;
+        width: 200px;
+        transition: 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 70px;
+        right: 15px;
+
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+        align-items: flex-start;
+        z-index: 1000;
+    }
+}
+
+.social-icon {
+    display: none;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.hero {
+    height: auto;
+    min-height: 500px;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero-tagline {
+    font-size: 15px;
+}
+
+.hero button {
+    padding: 12px 24px;
+    font-size: 16px;
+}
 }
