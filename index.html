@@ -337,17 +337,19 @@
     </footer>
     <button id="topBtn">↑</button>
     <script>
+const toggle = document.querySelector(".toggle");
+const nav = document.querySelector(".nav-links");
 
-        document.addEventListener("DOMContentLoaded", function () {
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
 
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navLinks = document.querySelector(".nav-links");
-
-            menuToggle.addEventListener("click", function () {
-                navLinks.classList.toggle("active");
-            });
-
-        });
+// close menu after clicking a link
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+});
 
     </script>
 </body>

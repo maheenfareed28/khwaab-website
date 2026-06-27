@@ -9,7 +9,9 @@ body {
 h1 {
     color: #A88A5E;
 }
-
+.banner-section {
+    background: inherit; /* or same color as parent */
+}
 .welcome-text {
     font-size: 16px;
     letter-spacing: 3px;
@@ -17,7 +19,10 @@ h1 {
     margin-bottom: 10px;
     font-weight: bold;
 }
-
+.banner {
+    display: block;
+    width: 100%;
+}
 .announcement {
     background-color: #FAF7F2;
     color: #947931;
@@ -39,7 +44,17 @@ button {
     text-transform: uppercase;
     transition: 0.3s;
 }
-
+.arrow-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-btn i {
+    line-height: 1;
+}
 .luxury-divider {
     width: 120px;
     margin: 0 auto;
@@ -572,6 +587,8 @@ body.riwayat-page {
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     line-height: 1.8;
+      padding: 20px 15px;  /* adjust based on design */
+    line-height: 1.6;
 }
 
 .story h3 {
@@ -689,10 +706,12 @@ body.riwayat-page {
         right: -250px;
         width: 200px;
         transition: 0.3s;
+        display: none;
     }
 
     .nav-links.active {
         right: 0;
+          display: flex;
     }
 
     nav {
@@ -723,7 +742,11 @@ body.riwayat-page {
 
 .logo img {
     height: 50px;
+    
+    background: transparent;
+    object-fit: contain;
 }
+
 
 .hero {
     height: auto;
