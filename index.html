@@ -297,6 +297,34 @@
         </a>
 
     </section>
+    <section class="automation">
+    <h2>Smart Order Assistant</h2>
+    <p>Quickly place your order or request customization with one click.</p>
+
+    <div class="auto-buttons">
+
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Khwaab%20team%2C%0AI%20want%20to%20order%20from%20GUL%20collection"
+           target="_blank" class="auto-btn">
+            🌸 Order GUL
+        </a>
+
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Khwaab%20team%2C%0AI%20want%20to%20order%20from%20Riwayat%20collection"
+           target="_blank" class="auto-btn">
+            ✨ Order Riwayat
+        </a>
+
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Khwaab%20team%2C%0AI%20want%20a%20custom%20design%20from%20Naya%20collection"
+           target="_blank" class="auto-btn">
+            🎨 Order Naya
+        </a>
+
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Khwaab%20team%2C%0AI%20want%20a%20custom%20outfit%20made%20for%20me"
+           target="_blank" class="auto-btn highlight">
+            💖 Custom Order
+        </a>
+
+    </div>
+</section>
     <section id="contact" class="contact">
 
         <h2>Contact Us</h2>
@@ -335,22 +363,22 @@
         <p>© 2026 Khwaab by Mahin | Handmade with Love 💖</p>
 
     </footer>
-    <button id="topBtn">↑</button>
+  
+     <button id="topBtn">↑</button>
     <script>
-const toggle = document.querySelector(".toggle");
+const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav-links");
 
 toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
 });
 
-// close menu after clicking a link
+// close menu after clicking link
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         nav.classList.remove("active");
     });
 });
-
     </script>
 </body>
 

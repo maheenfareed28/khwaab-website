@@ -153,9 +153,9 @@ nav a:hover {
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 28px;
     cursor: pointer;
+    z-index: 9999;
+    position: relative;
 }
 
 .social-icon {
@@ -256,8 +256,7 @@ footer {
 
 .hero {
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.4),
-            rgba(255, 255, 255, 0.4)),
+        linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
         url("images/banner1.png");
 
     background-size: cover;
@@ -357,7 +356,48 @@ footer {
     padding: 12px;
     font-weight: bold;
 }
+.automation {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+}
 
+.automation p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+.auto-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.auto-btn {
+    background: #a88a5e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.auto-btn:hover {
+    transform: translateY(-3px);
+    background: #8d724a;
+}
+
+.auto-btn.highlight {
+    background: #2c2c2c;
+}
+
+.auto-btn.highlight:hover {
+    background: #000;
+}
 .why-us {
     text-align: center;
     padding: 50px 20px;
@@ -576,8 +616,10 @@ body.riwayat-page {
 
 .story {
     text-align: center;
-    padding: 60px 20px;
+   
+    padding: 25px 20px;
 }
+
 
 .story p {
     max-width: 700px;
@@ -687,7 +729,14 @@ body.riwayat-page {
     .announcement {
         display: none;
     }
+section {
+        padding: 50px 15px;
+    }
 
+    p {
+        padding: 0 10px;
+    }
+}
     nav {
         position: relative;
         padding: 15px;
@@ -700,19 +749,22 @@ body.riwayat-page {
         top: 25px;
     }
 
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        right: -250px;
-        width: 200px;
-        transition: 0.3s;
-        display: none;
-    }
+   .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
 
-    .nav-links.active {
-        right: 0;
-          display: flex;
-    }
+.nav-links.active {
+    display: flex;
+}
 
     nav {
         position: relative;
@@ -734,7 +786,7 @@ body.riwayat-page {
         align-items: flex-start;
         z-index: 1000;
     }
-}
+
 
 .social-icon {
     display: none;
