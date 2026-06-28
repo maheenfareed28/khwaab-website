@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Royal Heritage | Khwaab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav>
+
+        <div class="logo">
+            <img src="images/Mahii Creation logo.jpeg" alt="Mahiii Creation Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="riwayat.html">Riwayat</a>
+        </div>
+
+    </nav>
+
+    <section class="back-home">
+        <a href="riwayat.html">← Back to Riwayat</a>
+    </section>
+
+    <section class="product-page">
+
+        <div class="product-gallery">
+
+            <img class="main-product-image" id="mainImage" src="images/royal-heritage1.jpeg" alt="Royal Heritage">
+
+            <div class="thumbnail-gallery">
+
+                <img class="thumb" src="images/ethenic elegance.jpeg" alt="">
+                <img class="thumb" src="images/riwayat2.jpeg" alt="">
+                <img class="thumb" src="images/royal-heritage2.jpeg" alt="">
+                <img class="thumb" src="images/royal-heritage3.jpeg" alt="">
+                <img class="thumb" src="images/royal-heritage4.jpeg" alt="">
+                <img class="thumb" src="images/royal-heritage1.jpeg" alt="">
+
+            </div>
+        </div>
+
+        <div class="product-details">
+
+            <div class="collection-label">RIWAYAT COLLECTION</div>
+
+            <h1>Rang-e-Ishq</h1>
+
+            <p class="product-subtitle">
+                Where Art Meets Emotion
+            </p>
+
+            <p>
+                Rang-e-Ishq is a celebration of love, beauty, and timeless craftsmanship.
+                Handpainted with blooming floral motifs on an elegant ivory canvas, this
+                design captures the delicate charm of nature while reflecting the grace of
+                traditional artistry. Every brushstroke tells a story, making each piece
+                unique and crafted with care for those who love wearable art.
+            </p>
+
+
+            <ul>
+                <li>Handpainted Design</li>
+                <li>Customizable</li>
+                <li>Made to Order</li>
+                <li>Premium Fabric</li>
+            </ul>
+            <div class="product-price">
+                Starting From ₹4,500
+            </div>
+            <a href="https://wa.me/91YOURNUMBER" target="_blank">
+                <button>✨ Enquire on WhatsApp</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const mainImage = document.getElementById("mainImage");
+
+        const thumbnails = document.querySelectorAll(".thumb");
+
+        thumbnails.forEach(function (thumb) {
+
+            thumb.addEventListener("click", function () {
+
+                mainImage.src = this.src;
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
