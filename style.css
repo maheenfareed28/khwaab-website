@@ -120,7 +120,7 @@ nav {
     left: 0;
     right: 0;
     background-color: white;
-    padding: 15px 30px;
+    padding: 5px 25px;
     z-index: 1000;
 
     display: flex;
@@ -154,23 +154,31 @@ nav a:hover {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 40px;
     font-weight: bold;
     color: #a88a5e;
 }
 
 .logo img {
-    height: 70px;
+    height: 100px;
     width: auto;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #5f0637;
+
     margin: 0 15px;
     font-weight: bold;
     transition: all 0.3s ease;
     position: relative;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .nav-links a:hover {
@@ -219,14 +227,15 @@ html {
 }
 
 .product-card {
-    background: white;
-    width: 300px;
+    background: #fff;
+    width: 320px;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -235,15 +244,16 @@ html {
 
 .product-card h3 {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 18px 0 8px;
     color: #3b3124;
     font-size: 24px;
 }
 
 .product-card p {
     text-align: center;
-    color: #a88a5e;
+    color: #777;
     font-weight: 600;
+    margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -254,8 +264,70 @@ html {
     object-fit: cover;
     border-radius: 12px;
     transition: 0.3s;
+    display: block;
 }
 
+.riwayat-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 300px) !important;
+    column-gap: 120px;
+    row-gap: 80px;
+
+    justify-content: center;
+
+
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.riwayat-card {
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.riwayat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.riwayat-card img {
+    width: 100%;
+    height: 380px;
+    /* same height for all images */
+    object-fit: cover;
+    display: block;
+}
+
+.riwayat-card h3 {
+    margin: 18px 15px 8px;
+    font-size: 22px;
+}
+
+.riwayat-card p,
+.product-tag {
+    margin: 0 15px 18px;
+    font-size: 14px;
+    color: #666;
+}
+
+.product-link {
+    display: block;
+    width: 280px;
+    text-decoration: none;
+    color: inherit;
+}
 
 .products-container {
     display: flex;
@@ -265,7 +337,7 @@ html {
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -426,6 +498,7 @@ footer {
     background-size: cover;
     background-position: center;
     min-height: 900px !important;
+    margin-top: 0;
 
     display: flex;
     flex-direction: column;
@@ -437,15 +510,15 @@ footer {
     color: rgb(95, 6, 55);
 }
 
-.hero h1 {
-    .hero h1 {
-        font-size: 90px !important;
-        letter-spacing: 8px !important;
-        margin: 20px 0 !important;
-        line-height: 1 !important;
-    }
 
+.hero h1 {
+    font-size: 120px !important;
+    letter-spacing: 8px !important;
+    margin: 20px 0 !important;
+    line-height: 1 !important;
 }
+
+
 
 .hero p {
     font-size: 24px;
@@ -780,7 +853,7 @@ body.riwayat-page {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .story {
@@ -914,7 +987,7 @@ body.riwayat-page {
 
     nav {
         position: relative;
-        padding: 15px;
+        padding: 5px 25px;
         width: 100%;
     }
 
@@ -923,6 +996,7 @@ body.riwayat-page {
         position: absolute;
         right: 20px;
         top: 25px;
+        cursor: pointer;
     }
 
     .nav-links {
@@ -949,7 +1023,7 @@ body.riwayat-page {
     }
 
     .logo img {
-        height: 50px;
+        height: 45px;
         object-fit: contain;
     }
 
@@ -959,6 +1033,7 @@ body.riwayat-page {
 
     .hero {
         display: none;
+        margin-top: 0;
     }
 
     /* =========================
